@@ -1,0 +1,24 @@
+<button (click)="getpost()"> Mostrar 
+
+</button>
+<div class="container">
+  <div class="row">
+      <div class="card col-md-4" style="width: 18rem;" *ngFor="let post of posts | async">
+          <div>
+              
+            
+          </div>
+        
+            <div class="card-body"> 
+              <h5 class="card-title">{{post.name}}</h5> 
+              <ul class="list-group list-group-flush">
+                  <li class="list-group-item">{{post.age}}</li>
+                  <li class="list-group-item">{{post.email}}</li>
+                  <li class="list-group-item">{{post.sex}}</li>
+                </ul>
+            </div>
+            
+          </div>  
+  </div>
+</div>
+
